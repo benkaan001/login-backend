@@ -5,10 +5,11 @@ if (process.env.NODE_ENV !== "production") {
 const express = require("express");
 const bcrypt = require("bcrypt");
 const passport = require("passport");
-const initializePassport = require("./passport");
 const flash = require("express-flash");
 const session = require("express-session");
 const methodOverride = require("method-override");
+
+const initializePassport = require("./passport");
 
 const {
   checkIfAuthenticated,
